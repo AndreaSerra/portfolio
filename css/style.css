@@ -12,6 +12,12 @@ INDEX CSS DOC:
 
 
 
+
+
+
+
+
+
 /*SETUP */
 *, *:before, *:after {
   margin: 0;
@@ -24,9 +30,6 @@ INDEX CSS DOC:
   clear: both;
 }
 /*SETUP */
-
-
-
 
 /* LAYOUT	*/
 html{
@@ -43,6 +46,12 @@ body{
 
 
 
+
+
+
+
+
+
 /* FONTS	*/
 .montserrat{
   font-family: 'Montserrat', sans-serif;
@@ -51,7 +60,6 @@ body{
 	font-family: "Montserrat";
 	src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
-
 .justify{
   text-align: justify;
 }
@@ -67,8 +75,13 @@ body{
 .text-white{
   color: white;
 }
-
 /* FONTS	*/
+
+
+
+
+
+
 
 
 
@@ -76,73 +89,103 @@ body{
 /* ELEMENTS	*/
 .wrap{
   height: 100%;
-  margin-left:20%;
-  margin-right:20%;
+  margin-left:10%;
+  margin-right:10%;
   display:flex;
+  flex-direction:column;
   justify-content: center;
-  align-items: center;
 }
 .title{
   font-size: 32px;
   font-weight: 100;
 }
-
-.popup{
-  transform-origin: center top;
-  height: 0px;
-  width: 0px;
-  box-shadow: 0px 1px 7px #777;
-  background-color: #fcfcfc;
-  top: 0px;
-  border: 0px solid #a29694;
-  border-radius: 4px;
-  -webkit-transition: height 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s, width 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s, box-shadow 0.7s cubic-bezier(.79,.14,.15,.86) 0.25s, top 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s;
-  transition: height 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s, width 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s, box-shadow 0.7s cubic-bezier(.79,.14,.15,.86) 0.25s, top 0.2s cubic-bezier(.79,.14,.15,.86) 0.1s;
+.link{
+  height: 40px;
+  width: 40px;
+  background-image: url('../img/as.png');
+  background-position: center center;
+  background-size: contain;
+  text-decoration: none;
 }
-@keyframes poptxt {
-  from{opacity:0;}
-  to{opacity: 1;}
+.link-container{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  margin-top: 40px;
+  width: 200px;
 }
 /* ELEMENTS	*/
 
 
 
 
+
+
+
+
+
+
 /* HOVER EFFECTS */
+.link:hover{
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
 /* HOVER EFFECTS */
+
+
+
+
+
+
 
 
 
 
 /* MEDIA QUERY*/
-@media screen and (max-width: 600px){
-}
-
 @media screen and (max-width: 840px) {
   .title{
     font-size: 20px;
   }
+  .link{
+    height: 32px;
+    width: 32px;
+  }
+  .link-container{
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
 }
 /* MEDIA QUERY*/
 
 
 
 
+
+
+
+
+
+
 /* IMG	*/
-.image1{
-  background-image: url('../img/chisiamo3.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: ;
-  background-size: cover;
+.linkedin{
+  background-image: url('../img/linkedin.svg');
+}
+.instagram{
+  background-image: url('../img/instagram.svg');
+}
+.email{
+  background-image: url('../img/email.svg');
 }
 /* IMG	*/
 
 
 
 
-/* COLORS	  #2daf94, #3ec8ac, #4be4c5, #c8f6ed #ffce63 #faf15d #0aa0f6 #0e7cf4 #0962ea #44679f  #f95959*/
-/* COLORS	*/
+
+
 
 
 
@@ -183,4 +226,28 @@ body{
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+  z-index:-100;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+  z-index:-100;
+}
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
 /* ANIMATE CSS	*/
