@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="46" width="44">
+  <defs>
+    <ellipse id="ellipse-0" opacity="1" rx="6" ry="6" cx="22" cy="22"/>
+    <filter id="filter-1" filterUnits="userSpaceOnUse" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset in="SourceAlpha" result="shadow-1-feOffset-shadow" dx="0" dy="2"/>
+      <feGaussianBlur in="shadow-1-feOffset-shadow" result="shadow-1-feGaussianBlur-shadow" stdDeviation="2"/>
+      <feColorMatrix in="shadow-1-feGaussianBlur-shadow" result="shadow-1-feColorMatrix-shadow" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.18 0"/>
+    </filter>
+  </defs>
+  <g opacity="1">
+    <use xlink:href="#ellipse-0" fill="black" filter="url(#filter-1)" stroke="black" stroke-opacity="0" stroke-width="0"/>
+    <use xlink:href="#ellipse-0" fill="rgb(87,255,160)" fill-opacity="1"/>
+  </g>
+</svg>

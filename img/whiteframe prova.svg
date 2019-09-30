@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1278px" height="744px" viewBox="0 0 1278 744" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 5_Isometric Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-28.5%" y="-55.7%" width="157.0%" height="211.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="75" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.460571929   0 0 0 0 0.497549661   0 0 0 0 0.608684099  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-5_Isometric-Copy" filter="url(#filter-1)" transform="translate(90.000000, 41.000000)">
+            <polygon id="Rectangle-5_Left_Isometric" fill="#FAFAFA" points="687 562 0 218.271375 0 205 687 548.728625"></polygon>
+            <polygon id="Rectangle-5_Right_Isometric" fill="#FAFAFA" points="687 562 1098 356.272727 1098 343 687 548.727273"></polygon>
+            <polygon id="Rectangle-5_Top_Isometric" fill="#FFFFFF" points="0 205.543478 411.086957 0 1098 343.456522 686.913043 549"></polygon>
+        </g>
+    </g>
+</svg>

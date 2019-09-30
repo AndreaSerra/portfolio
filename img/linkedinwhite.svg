@@ -6,10 +6,10 @@
   </defs>
   <g opacity="1">
     <g opacity="1">
-      <use xlink:href="#path-0" fill="#00001A" fill-opacity="1"/>
+      <use xlink:href="#path-0" fill="rgb(255,255,255)" fill-opacity="1"/>
     </g>
     <g opacity="1">
-      <use xlink:href="#path-1" fill="#00001A" fill-opacity="1"/>
+      <use xlink:href="#path-1" fill="rgb(255,255,255)" fill-opacity="1"/>
     </g>
   </g>
 </svg>
